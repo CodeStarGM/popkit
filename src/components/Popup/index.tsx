@@ -1,3 +1,6 @@
+import React from "react";
+import "../../index.css";
+
 interface Props {
   heading: string;
   description: string;
@@ -9,9 +12,9 @@ interface Props {
 export const Popup = ({
   heading,
   description,
-  open,
-  setOpen,
-  onConfirm,
+  open = true,
+  setOpen = () => {},
+  onConfirm = () => {},
 }: Props) => {
   return (
     <>
