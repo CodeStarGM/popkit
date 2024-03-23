@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.popup {
+  animation: popup_in 0.3s;
+  transition: top 0ms ease-in-out 300ms;
+}
+
+@keyframes popup_in {
+  0% {
+    transform: scale(0.7);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
