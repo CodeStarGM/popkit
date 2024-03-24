@@ -12,8 +12,10 @@
     ".": {
       "import": "./dist/popkit.js",
       "require": "./dist/popkit.umd.cjs"
-    }
+    },
+    "./dist/style.css":"./dist/style.css"
   },
+  "sideEffects":false,
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
