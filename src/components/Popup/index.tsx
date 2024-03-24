@@ -1,20 +1,36 @@
 import React from "react";
 
-interface Props {
+/**
+ * Props for the Popup component.
+ */
+interface PopupProps {
+  /** Heading of the popup. */
   heading: string;
+  /** Description of the popup. */
   description: string;
+  /** Flag to control whether the popup is open or not. */
   open: boolean;
+  /** Function to set the state of the popup. */
   setOpen: () => void;
+  /** Function to handle confirm action. */
   onConfirm: () => void;
 }
 
+/**
+ * Popup component to display a modal popup.
+ * @param {PopupProps} props - The props for the Popup component.
+ * @returns {JSX.Element} Popup component.
+ */
 export const Popup = ({
-  heading,
-  description,
+  heading = "Popkit Popup Successful!",
+  description = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+  perspiciatis. Hic inventore dolore fugit molestias cumque perspiciatis
+  eaque laudantium, voluptas vel sed doloremque unde sequi veritatis
+  possimus architecto, impedit vitae.`,
   open = true,
   setOpen = () => {},
   onConfirm = () => {},
-}: Props) => {
+}: PopupProps): JSX.Element => {
   return (
     <>
       <div
