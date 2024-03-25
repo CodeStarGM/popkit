@@ -1,7 +1,7 @@
 {
   "name": "popkit",
   "private": false,
-  "version": "0.0.1",
+  "version": "1.0.1",
   "type": "module",
   "files": [
     "dist"
@@ -55,5 +55,7 @@
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vite-tsconfig-paths": "^4.3.2"
-  }
+  },
+  "license": "MIT"
+ 
 }
