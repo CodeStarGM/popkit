@@ -1,6 +1,6 @@
 import React from "react";
 import type { Meta, StoryFn } from "@storybook/react";
-import { Popup } from "./index";
+import Popup from ".";
 
 export default {
   title: "Popup",

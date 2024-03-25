@@ -1,4 +1,3 @@
 import "../index.css";
-import { Popup } from "./Popup";
 
-export { Popup };
+export { default as Popup } from "./Popup";

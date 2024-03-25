@@ -1,23 +1,12 @@
 import React from "react";
 
-interface Props {
-  heading: string;
-  description: string;
-  open: boolean;
-  setOpen: () => void;
-  onConfirm: () => void;
-}
-
-export const Popup = ({
-  heading = "Popkit Popup Successful!",
-  description = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
-  perspiciatis. Hic inventore dolore fugit molestias cumque perspiciatis
-  eaque laudantium, voluptas vel sed doloremque unde sequi veritatis
-  possimus architecto, impedit vitae.`,
+const Popup = ({
+  heading,
+  description,
   open = true,
   setOpen = () => {},
   onConfirm = () => {},
-}: Props) => {
+}) => {
   return (
     <>
       <div
@@ -43,7 +32,7 @@ export const Popup = ({
             </svg>
           </div>
 
-          <div className="sapce-y-2">
+          <div className="space-y-2">
             {/* symbol */}
             <div className="flex items-center justify-center w-[50px] h-[50px] rounded-full bg-[#ECFDF3]">
               <div className="flex items-center justify-center w-[38px] h-[38px] rounded-full bg-[#D1FADF]">
@@ -91,3 +80,5 @@ export const Popup = ({
     </>
   );
 };
+
+export default Popup;
