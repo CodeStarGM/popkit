@@ -9,7 +9,7 @@ interface Props {
   onConfirm: () => void;
 }
 
-export const Popup = ({
+export const SuccessPopup = ({
   title,
   description,
   buttonColor = "7F56D9",

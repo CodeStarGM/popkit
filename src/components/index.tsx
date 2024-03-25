@@ -1,3 +1,3 @@
 import "../index.css";
 
-export { Popup } from "./Popup";
+export { SuccessPopup } from "./Popup";
