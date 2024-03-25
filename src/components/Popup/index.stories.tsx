@@ -11,10 +11,32 @@ const Template: StoryFn = (args: any) => <Popup {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  title: "Blog post published",
+  title: "PopKit Integration Completed! 🎉",
   description:
-    "This blog post has been published. Team members will be able to edit this post and republish changes, Team members will be able to edit this post and republish changes. ",
+    "PopKit is your go-to React library for creating stunning popups and modals, effortlessly integrate sleek and responsive popups into your React applications. 🚀 ",
   variant: "primary",
+  open: true,
+  setOpen: () => {},
+  onConfirm: () => {},
+};
+
+export const Success = Template.bind({});
+Success.args = {
+  title: "Mission Accomplished! 🏆",
+  description:
+    "Congratulations! You've successfully completed your task. Our success popups celebrate your achievements and victories!",
+  variant: "success",
+  open: true,
+  setOpen: () => {},
+  onConfirm: () => {},
+};
+
+export const Info = Template.bind({});
+Info.args = {
+  title: "Stay Updated with Popkit!",
+  description:
+    "Keep informed with our latest updates and announcements. Stay ahead of the curve with our info popups!",
+  variant: "info",
   open: true,
   setOpen: () => {},
   onConfirm: () => {},
@@ -22,9 +44,9 @@ Primary.args = {
 
 export const Danger = Template.bind({});
 Danger.args = {
-  title: "Blog post published",
+  title: "Warning! Danger Ahead! ⚠️",
   description:
-    "This blog post has been published. Team members will be able to edit this post and republish changes, Team members will be able to edit this post and republish changes. ",
+    "Proceed with caution! Our danger popups alert you to potential risks or critical information you need to know.",
   variant: "danger",
   open: true,
   setOpen: () => {},
