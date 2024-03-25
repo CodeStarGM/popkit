@@ -28,7 +28,7 @@ export const Popup = ({
         >
           <div className=" cursor-pointer absolute top-5 right-5">
             <svg
-              xmlns="http://www.w3.org/2000/svg"
+              xmlns="https://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
               className="w-6 h-6 text-[#667085]"
@@ -46,7 +46,7 @@ export const Popup = ({
             <div className="flex items-center justify-center w-[50px] h-[50px] rounded-full bg-[#ECFDF3]">
               <div className="flex items-center justify-center w-[38px] h-[38px] rounded-full bg-[#D1FADF]">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns="https://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={2}
