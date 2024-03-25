@@ -3,17 +3,16 @@ import React from "react";
 interface Props {
   title: string;
   description: string;
+  buttonColor: string;
   open: boolean;
   setOpen: () => void;
   onConfirm: () => void;
 }
 
 export const Popup = ({
-  title = "Popkit Popup Successful!",
-  description = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
-  perspiciatis. Hic inventore dolore fugit molestias cumque perspiciatis
-  eaque laudantium, voluptas vel sed doloremque unde sequi veritatis
-  possimus architecto, impedit vitae.`,
+  title,
+  description,
+  buttonColor = "7F56D9",
   open = true,
   setOpen = () => {},
   onConfirm = () => {},
@@ -28,7 +27,7 @@ export const Popup = ({
         <div
           className={`popup flex flex-col items-center justify-around p-5 relative bg-white shadow-2xl rounded-[20px] w-[400px] h-[260px] `}
         >
-          <div className="cursor-pointer absolute top-5 right-5">
+          <div className=" cursor-pointer absolute top-5 right-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -43,7 +42,7 @@ export const Popup = ({
             </svg>
           </div>
 
-          <div className="sapce-y-2">
+          <div className="w-full space-y-2">
             {/* symbol */}
             <div className="flex items-center justify-center w-[50px] h-[50px] rounded-full bg-[#ECFDF3]">
               <div className="flex items-center justify-center w-[38px] h-[38px] rounded-full bg-[#D1FADF]">
@@ -74,13 +73,14 @@ export const Popup = ({
           <div className="font-semibold w-full flex items-center justify-evenly">
             <button
               onClick={setOpen}
-              className="bg-white text-[#475467] w-[47%] py-2 rounded-[8px] border border-[#D0D5DD]"
+              className="hover:bg-gray-50 bg-white text-[#475467] w-[47%] py-2 rounded-[8px] border border-[#D0D5DD]"
             >
               Cancel
             </button>
             <button
               onClick={onConfirm}
-              className="bg-[#7F56D9] text-white w-[47%] py-2 rounded-[8px] "
+              style={{ backgroundColor: `#${buttonColor}` }}
+              className={` text-white w-[47%] py-2 rounded-[8px] `}
             >
               Done
             </button>
