@@ -1,13 +1,13 @@
 import React from "react";
 import type { Meta, StoryFn } from "@storybook/react";
-import { SuccessPopup } from "./index";
+import { Popup } from "./index";
 
 export default {
   title: "Popup",
-  component: SuccessPopup,
+  component: Popup,
 } as Meta;
 
-const Template: StoryFn = (args: any) => <SuccessPopup {...args} />;
+const Template: StoryFn = (args: any) => <Popup {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
