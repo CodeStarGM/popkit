@@ -92,7 +92,7 @@ import "popkit/dist/style.css";
 | primary      | ![Primary Variant](https://iili.io/Jj9b1Ag.png) |
 | success      | ![Success Variant](https://iili.io/Jj9x4nV.png) |
 | info         | ![Info Variant](https://iili.io/Jj9xUwx.png)    |
-|  |
+|              |
 | danger       | ![Danger Variant](https://iili.io/Jj9xgZQ.png)  |
 
 ### Is That All?
