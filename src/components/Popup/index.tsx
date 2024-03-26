@@ -4,10 +4,9 @@ import { SuccessIcon, PrimaryIcon, DangerIcon, InfoIcon } from "../../icons";
 interface Props {
   title: string;
   description: string;
-  buttonColor: string;
   variant: string;
   crossButton: boolean;
-  buttonsText: string[];
+  buttonsText: [string, string];
   open: boolean;
   setOpen: () => void;
   onConfirm: () => void;
