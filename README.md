@@ -2,7 +2,7 @@
 
 ![App Screenshot](https://iili.io/JhyTLgt.md.png)
 
-PopKit is your go-to React library for creating stunning popups and modals. 🚀 effortlessly integrate sleek and responsive popups into your React applications. From toast notifications to modal dialogs, PopKit simplifies the development process, allowing you to focus on crafting seamless user experiences. 🔧 Elevate your React app with PopKit today.
+Introducing PopKit, the essential React library for crafting captivating popups, modals, toasts, and alerts. 🚀 Seamlessly integrate polished and responsive components into your React applications. PopKit streamlines development, empowering you to prioritize flawless user experiences. 🔧 Elevate your React app effortlessly with PopKit today.
 
 ## Installation
 
@@ -24,7 +24,7 @@ Using Yarn : 👇
 
 ## Usage / Examples
 
-Starter Boiler plate Code to start with 👇
+General Popup 👇
 
 ```javascript
 import React, { useState } from "react";
@@ -53,6 +53,46 @@ function Example() {
           /*redirect somewhere*/
         }}
         crossButton={true}
+        buttonsText={["First Button Text", "Second Button Text"]}
+      />
+    </>
+  );
+}
+```
+
+&emsp;
+
+Popup With Image 👇
+
+![Image Popup Preview](https://iili.io/JjxbSIa.png)
+
+```javascript
+import React, { useState } from "react";
+
+import { ImagePopup } from "popkit";
+import "popkit/dist/style.css"; //Important for Styling
+
+function Example() {
+  const [modal, setModal] = useState(false);
+
+  const handlePopup = () => {
+    setModal(true);
+  };
+  return (
+    <>
+      <button onClick={handlePopup}>Trigger Popkit!</button>
+      <Popup
+        title="Mission accomplished! "
+        description="Astronauts landed on the moon successfully. Stay tuned as our team delves into the historic lunar landing achievements"
+        buttonColor="DC6803"
+        img="https://img.freepik.com/premium-photo/ai-enhances-our-understanding-cosmos-by-analyzing-vast-amounts-data-collected-by-telescopes-probes-generated-by-ai_727385-1872.jpg?w=900"
+        open={modal}
+        setOpen={() => {
+          setModal(!modal);
+        }}
+        onConfirm={() => {
+          /*redirect somewhere*/
+        }}
         buttonsText={["First Button Text", "Second Button Text"]}
       />
     </>
@@ -92,7 +132,7 @@ import "popkit/dist/style.css";
 | primary      | ![Primary Variant](https://iili.io/Jj9b1Ag.png) |
 | success      | ![Success Variant](https://iili.io/Jj9x4nV.png) |
 | info         | ![Info Variant](https://iili.io/Jj9xUwx.png)    |
-|              |
+|  |
 | danger       | ![Danger Variant](https://iili.io/Jj9xgZQ.png)  |
 
 ### Is That All?
