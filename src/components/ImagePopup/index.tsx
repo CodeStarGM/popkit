@@ -31,7 +31,13 @@ export const ImagePopup = ({
           className={`popup flex flex-col items-center justify-between p-4 md:p-6 relative bg-white shadow-2xl rounded-[20px] w-full md:w-[380px] min-h-[420px] h-auto `}
         >
           <div className="w-full h-[200px]  ">
-            <img src={img} className="w-full h-full object-cover rounded-2xl" />
+            <img
+              src={img}
+              className="w-full h-full object-cover rounded-2xl"
+              alt={title}
+              loading="lazy"
+              decoding="async"
+            />
           </div>
 
           <div className=" text-center w-full space-y-2">
