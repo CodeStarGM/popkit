@@ -11,44 +11,21 @@ const Template: StoryFn = (args: any) => <Popup {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  title: "PopKit Integration Completed! 🎉",
+  title: "Mission accomplished! ",
   description:
-    "PopKit is your go-to React library for creating stunning popups and modals, effortlessly integrate sleek and responsive popups into your React applications. 🚀 ",
-  variant: "primary",
+    "Astronauts landed on the moon successfully. Stay tuned as our team delves into the historic lunar landing achievements. ",
+  buttonColor: "DC6803",
   open: true,
-  setOpen: () => {},
-  onConfirm: () => {},
+  img: "https://img.freepik.com/premium-photo/ai-enhances-our-understanding-cosmos-by-analyzing-vast-amounts-data-collected-by-telescopes-probes-generated-by-ai_727385-1872.jpg?w=900",
 };
 
-export const Success = Template.bind({});
-Success.args = {
-  title: "Mission Accomplished! 🏆",
+export const Product = Template.bind({});
+Product.args = {
+  title: "Product Uploaded! ",
   description:
-    "Congratulations! You've successfully completed your task. Our success popups celebrate your achievements and victories!",
-  variant: "success",
-  open: true,
-  setOpen: () => {},
-  onConfirm: () => {},
-};
+    "The New Iphone Product is uploaded and is live now, your team can edit and update the product",
 
-export const Info = Template.bind({});
-Info.args = {
-  title: "Stay Updated with Popkit!",
-  description:
-    "Keep informed with our latest updates and announcements. Stay ahead of the curve with our info popups!",
-  variant: "info",
+  img: "https://i0.wp.com/gizmologi.com/wp-content/uploads/2017/03/iPhone-7-Product-RED.jpg?fit=954%2C643&ssl=1",
   open: true,
-  setOpen: () => {},
-  onConfirm: () => {},
-};
-
-export const Danger = Template.bind({});
-Danger.args = {
-  title: "Warning! Danger Ahead! ⚠️",
-  description:
-    "Proceed with caution! Our danger popups alert you to potential risks or critical information you need to know.",
-  variant: "danger",
-  open: true,
-  setOpen: () => {},
-  onConfirm: () => {},
+  buttonColor: "d01313",
 };
