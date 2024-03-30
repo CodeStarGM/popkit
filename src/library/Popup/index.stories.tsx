@@ -16,6 +16,7 @@ Primary.args = {
     "Astronauts landed on the moon successfully. Stay tuned as our team delves into the historic lunar landing achievements. ",
   buttonColor: "DC6803",
   open: true,
+  isDark: true,
   img: "https://img.freepik.com/premium-photo/ai-enhances-our-understanding-cosmos-by-analyzing-vast-amounts-data-collected-by-telescopes-probes-generated-by-ai_727385-1872.jpg?w=900",
 };
 
@@ -27,5 +28,6 @@ Product.args = {
 
   img: "https://i0.wp.com/gizmologi.com/wp-content/uploads/2017/03/iPhone-7-Product-RED.jpg?fit=954%2C643&ssl=1",
   open: true,
+  isDark: false,
   buttonColor: "d01313",
 };
