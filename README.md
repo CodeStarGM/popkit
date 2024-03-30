@@ -241,4 +241,8 @@ export default Popkit;
 
 Absolutely not! We're constantly adding more exciting components, including cool popups with various styles, as well as toasts, alert messages, and much more!
 
-Have ideas or want to contribute? Show support by Clicking [here](mailto:codestargm@gmail.com)
+### Contribute
+
+Show your ❤️ and support by giving a ⭐. Any suggestions are welcome!
+
+Have ideas or want to contribute? Show support by Clicking [Here](https://github.com/CodeStarGM/popkit)
