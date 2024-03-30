@@ -77,7 +77,7 @@ export const CookiesPopup = ({
             <div className="h-auto rounded-full w-full flex items-center justify-center">
               <button
                 onClick={onSubmit}
-                className={`${isDark ? "bg-gray-50 text-[#3941FF]" : " hover:bg-[#1f2e5a] bg-[#10182F] text-white"} font-semibold hover:bg-gray-200 rounded-xl md:text-lg py-2 px-14 `}
+                className={`${isDark ? " hover:bg-gray-200 bg-gray-50 text-[#3941FF]" : " hover:bg-[#1f2e5a] bg-[#10182F] text-white"} font-semibold  rounded-xl md:text-lg py-2 px-14 `}
               >
                 Accept
               </button>
