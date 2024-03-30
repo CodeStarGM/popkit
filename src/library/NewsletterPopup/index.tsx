@@ -5,6 +5,7 @@ interface Props {
   description: string;
   buttonColor: string;
   iconImage: string;
+  isDark: boolean;
   buttonsText: [string, string];
   open: boolean;
   setOpen: () => void;
@@ -17,6 +18,7 @@ export const NewsletterPopup = ({
   iconImage,
   buttonColor,
   open = true,
+  isDark,
   setOpen = () => {},
   onSubmit = () => {},
 }: Props) => {
@@ -28,7 +30,7 @@ export const NewsletterPopup = ({
       >
         {/* popup start */}
         <div
-          className={`popup flex flex-col items-center justify-around p-4 md:p-8 relative bg-white shadow-2xl rounded-[20px] w-full md:w-[550px] min-h-[400px] h-auto `}
+          className={`popup flex flex-col items-center justify-around p-4 md:p-8 relative ${isDark ? "bg-[#10182F]" : "bg-white"} shadow-2xl rounded-[20px] w-full md:w-[550px] min-h-[400px] h-auto `}
         >
           <div
             onClick={setOpen}
@@ -59,18 +61,26 @@ export const NewsletterPopup = ({
           </div>
 
           <div className=" text-center w-full space-y-2">
-            <h2 className="text-[#170F49] font-semibold text-lg md:text-2xl">
+            <h2
+              className={`${isDark ? "text-white " : "text-[#170F49]"}  font-semibold text-2xl `}
+            >
               {title}
             </h2>
-            <p className="lg:text-sm text-xs text-[#6F6C90]">{description}</p>
+            <p
+              className={`${isDark ? "text-zinc-300" : "text-[#6F6C90]"} lg:text-sm text-xs   `}
+            >
+              {description}
+            </p>
           </div>
-          <div className="h-auto rounded-full md:border border-gray-300 shadow-sm  w-full">
+          <div
+            className={`${isDark ? "bg-zinc-200" : "md:border border-gray-300"} h-auto rounded-full  shadow-sm  w-full`}
+          >
             <form
               onSubmit={onSubmit}
               className="space-y-4 md:space-y-0 p-2 w-full flex flex-col md:flex-row items-center justify-between"
             >
               <input
-                className="md:border-none rounded-full md:text-base text-sm  border border-gray-300 px-4 w-full p-2 outline-none text-gray-900 placeholder:text-gray-500"
+                className="bg-transparent md:border-none rounded-full md:text-base text-sm  border border-gray-300 px-4 w-full p-2 outline-none text-gray-900 placeholder:text-gray-500"
                 type="text"
                 placeholder="Enter your email"
                 id="newsletter"

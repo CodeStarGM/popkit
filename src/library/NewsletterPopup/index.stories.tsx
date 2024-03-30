@@ -16,6 +16,7 @@ Primary.args = {
     "Receive new articles and resources directly on your inbox. fill you email below to join our email newsletter today  ",
   buttonColor: "4A3AFF",
   open: true,
+  isDark: true,
   iconImage: "https://i.ibb.co/LCQvnrL/Group-37333.png",
   setOpen: () => {},
   onSubmit: () => {},
