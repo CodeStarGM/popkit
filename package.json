@@ -1,7 +1,7 @@
 {
   "name": "popkit",
   "private": false,
-  "version": "1.1.1",
+  "version": "1.5.4",
   "type": "module",
   "files": [
     "dist"
