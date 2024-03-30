@@ -1,16 +1,24 @@
 import React from "react";
 
-export const InfoIcon = () => {
+interface Props {
+  isDark: boolean;
+}
+
+export const InfoIcon = ({ isDark }: Props) => {
   return (
-    <div className="flex items-center justify-center w-[50px] h-[50px] rounded-full bg-[#FFFAEB]">
-      <div className="flex items-center justify-center w-[38px] h-[38px] rounded-full bg-[#FEF0C7]">
+    <div
+      className={`${isDark ? "bg-[#4e4c47]" : "bg-[#FFFAEB]"} flex items-center justify-center w-[50px] h-[50px] rounded-full `}
+    >
+      <div
+        className={`flex items-center justify-center w-[38px] h-[38px] rounded-full ${isDark ? "bg-[#6c6348]" : "bg-[#FEF0C7]"}`}
+      >
         <svg
-          xmlns="http://www.w3.org/2000/svg"
+          xmlns="https://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={2}
           stroke="currentColor"
-          className="w-6 h-6 text-[#DC6803]"
+          className={`${isDark ? "text-[#ff7700]" : "text-[#DC6803]"} w-7 h-7 `}
         >
           <path
             strokeLinecap="round"

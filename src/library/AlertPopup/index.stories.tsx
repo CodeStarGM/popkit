@@ -16,6 +16,7 @@ Primary.args = {
     "PopKit is your go-to React library for creating stunning popups and modals, effortlessly integrate sleek and responsive popups into your React applications. 🚀 ",
   variant: "primary",
   open: true,
+  isDark: false,
   setOpen: () => {},
   onConfirm: () => {},
 };
@@ -27,6 +28,7 @@ Success.args = {
     "Congratulations! You've successfully completed your task. Our success popups celebrate your achievements and victories!",
   variant: "success",
   open: true,
+  isDark: false,
   setOpen: () => {},
   onConfirm: () => {},
 };
@@ -38,6 +40,7 @@ Info.args = {
     "Keep informed with our latest updates and announcements. Stay ahead of the curve with our info popups!",
   variant: "info",
   open: true,
+  isDark: false,
   setOpen: () => {},
   onConfirm: () => {},
 };
@@ -49,6 +52,7 @@ Danger.args = {
     "Proceed with caution! Our danger popups alert you to potential risks or critical information you need to know.",
   variant: "danger",
   open: true,
+  isDark: false,
   setOpen: () => {},
   onConfirm: () => {},
 };
