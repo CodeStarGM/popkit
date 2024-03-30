@@ -26,6 +26,7 @@ export const Popup = ({
   return (
     <>
       <div
+        id="popkit-popup"
         className={`${open ? "flex" : "hidden"} p-2 fixed inset-0 bg-[#344054]/50 flex items-center justify-center w-screen h-screen z-50 `}
       >
         {/* popup start */}
