@@ -1,6 +1,6 @@
 # PopKit! 🎉
 
-![App Screenshot](https://iili.io/JhyTLgt.md.png)
+![App Screenshot](https://i.ibb.co/mymdf3h/popkit-cover-2.png)
 
 Introducing PopKit, the essential React library for crafting captivating popups, modals, toasts, and alerts. 🚀 Seamlessly integrate polished and responsive components into your React applications. PopKit streamlines development, empowering you to prioritize flawless user experiences. 🔧 Elevate your React app effortlessly with PopKit today.
 
