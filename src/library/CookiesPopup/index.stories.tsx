@@ -26,7 +26,7 @@ export const Light = Template.bind({});
 Light.args = {
   title: "Cookie Policy",
   description:
-    "Receive new articles and resources directly on your inbox. fill you email below to join our email newsletter today  ",
+    "We care about your data, and we’d use cookies only to improve your experience.By using this website, you accpet out Cookies Policy.",
   iconImage: "https://i.ibb.co/6DQ7MPY/Component-1.png",
   open: true,
   setOpen: () => {},
