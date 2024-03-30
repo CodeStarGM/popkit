@@ -1,4 +1,4 @@
 declare module 'popkit' {
-    export * from './components/index';
+    export * from './library/index';
   }
   
